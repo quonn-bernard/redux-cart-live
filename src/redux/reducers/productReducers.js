@@ -1,6 +1,5 @@
 import { ORDER_PRODUCTS_BY_PRICE, FILTER_PRODUCTS_BY_SIZE, FETCH_PRODUCTS } from "../types";
 
-const data = require("../../data.json");
 const productsReducer = (state = {}, action) => {
   switch (action.type) {
     case FILTER_PRODUCTS_BY_SIZE:
