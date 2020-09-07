@@ -19,7 +19,7 @@ const Cart = ({ cartItems, createOrder, count }) => {
     name: "",
     address: 0,
   };
-  const { values, handleChange, handleSubmit } = useCustomForm({
+  const { values, handleChange } = useCustomForm({
     initialValues,
   });
   const addOrder = (e) => {
@@ -30,7 +30,7 @@ const Cart = ({ cartItems, createOrder, count }) => {
       cartItems: cartItems,
     };
     createOrder(order);
-    handleSubmit(e);
+    // handleSubmit(e);
   };
 
   const add = (item) => {
